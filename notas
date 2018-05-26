@@ -1,0 +1,19 @@
+ll -ah archivos ocultos
+
+git init -- inicia el repositorio
+git status
+
+git add .
+git commit -m "mensaje"
+
+git config --list
+
+git config --global user.email "<correo>"
+
+
+git remote add origin <ruta en git hub>   -- para vincular los directorios
+
+git remote -v    -- verifica la vinculacion 
+
+
+
