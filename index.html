@@ -74,8 +74,8 @@
 			<ul data-role="listview">
 				<li>Inicio</li>
 				<li><a href="#reserva">Reservar</a></li>
-				<li>Historial</li>
-				<li>Galería</li>
+				<li><a href="#historial">Historial</a></li>
+				<li><a href="#galeria">Galería</a></li>
 				<li>Privacidad</li>
 			</ul>
 		</div>
@@ -86,7 +86,10 @@
 
 	<div id="reserva" data-role="page">
 		<div data-role="header">
-			<a href="#main" data-role="button" data-icon="home" class="menu-btn"></a>
+			<div data-role="control-group" data-type="horizontal" class="ui-btn-left">
+				<a href="#main" data-role="button" data-icon="home" class="menu-btn"></a>
+			</div>
+			
 			<h5>Datos Reservación</h5>
 		</div>
 
@@ -116,6 +119,78 @@
 				Reservar
 			</button>
 
+		</div>
+	</div>
+
+
+	<div id="historial" data-role="page">
+		<div data-role="header" class="padding-4tb">
+			<div data-role="control-group" data-type="horizontal" class="ui-btn-left">
+				<a data-rel="back" data-role="button" data-icon="home" class="menu-btn"></a>
+			</div>
+			
+			<h5>Historial Reservaciones</h5>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<table class="tabla-historial">
+				<thead>
+					<tr>
+						<th>Fecha</th>
+						<th>Nombre</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td>21/04/2018</td>
+						<td>Juan Pérez</td>
+					</tr>
+
+					<tr>
+						<td>16/05/2018</td>
+						<td>Juan Pérez</td>
+					</tr>
+
+					<tr>
+						<td>29/05/2018</td>
+						<td>Juan Pérez</td>
+					</tr>
+
+					<tr>
+						<td>01/06/2018</td>
+						<td>Juan Pérez</td>
+					</tr>
+				</tbody>
+
+				
+			</table>
+		</div>
+	</div>
+
+	<div id="galeria" data-role="page">
+		<div data-role="header" class="padding-4tb">
+			<div data-role="control-group" data-type="horizontal" class="ui-btn-left">
+				<a data-rel="back" data-role="button" data-icon="home" class="menu-btn"></a>
+			</div>
+			
+			<h5>Galería</h5>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<div class="ui-grid-b">
+			    <div class="ui-block-a"><img src="img/img1.jpg"></div>
+			    <div class="ui-block-b"><img src="img/img2.jpg"></div>
+			    <div class="ui-block-c"><img src="img/img3.jpg"></div>
+
+			    <div class="ui-block-a"><img src="img/img4.jpg"></div>
+			    <div class="ui-block-b"><img src="img/img5.jpg"></div>
+			    <div class="ui-block-c"><img src="img/img6.jpg"></div>
+
+			    <div class="ui-block-a"><img src="img/img7.jpg"></div>
+			    <div class="ui-block-b"><img src="img/img8.jpg"></div>
+			    <div class="ui-block-c"><img src="img/img9.jpg"></div>
+			</div><!-- /grid-b -->
 		</div>
 	</div>
 
