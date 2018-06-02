@@ -16,9 +16,9 @@
 			<img src="img/logo_hotel.jpg">
 			<input type="text" name="email" id="email" placeholder="Correo">
 			<input type="password" name="password" id="password" placeholder="Contraseña">
-			<button class="ui-btn ui-btn-active">
+			<a href="#main" class="ui-btn ui-btn-active">
 				Iniciar Sesión
-			</button>
+			</a>
 
 			<a href="#registro">¿Aún no tienes cuenta?</a>
 		</div>
@@ -49,11 +49,75 @@
 		</div>
 
 		<div data-role="footer" data-position="fixed">
-			
 		</div>
 	</div>
 
+	<div id="main" data-role="page">
+		<div data-role="header">
 
+			<div data-role="control-group" data-type="horizontal">
+				<a href="#menu" data-role="button" data-icon="bars" class="menu-btn">
+				</a>
+			</div>
+			
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<img src="img/logo_hotel.jpg">
+			<p>Bienvenido Juan</p>
+			<a href="#reserva" class="ui-btn ui-btn-active">
+				¡Reserva Ya!
+			</a>
+		</div>
+		<div id="menu" data-role="panel" data-display="push">
+			<h3>Menú</h3>
+			<ul data-role="listview">
+				<li>Inicio</li>
+				<li><a href="#reserva">Reservar</a></li>
+				<li>Historial</li>
+				<li>Galería</li>
+				<li>Privacidad</li>
+			</ul>
+		</div>
+
+
+	</div>
+
+
+	<div id="reserva" data-role="page">
+		<div data-role="header">
+			<a href="#main" data-role="button" data-icon="home" class="menu-btn"></a>
+			<h5>Datos Reservación</h5>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<input type="text" name="name" id="name_r" placeholder="Nombre">
+			<select id="tipoHabitacion" name="tipoHabitacion" data-placeholder="true">
+				<option value="">Tipo de Habitación</option>
+			    <option value="estandar">Estándar</option>
+			    <option value="masterSuite">Master Suite</option>
+			</select>
+			<select id="numPersonas" data-placeholder="true">
+				<option value="">Número de Personas</option>
+			    <option value="1">1</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="4">4</option>
+			</select>
+			<label>Fecha Ingreso</label>
+			<input type="date" id="fechaIngreso" placeholder="Fecha Ingreso">
+			<label>Fecha Salida</label>
+			<input type="date" id="fechaSalida" placeholder="Fecha Salida">
+
+			<input type="checkbox" id="checkboxTerminos" class="custom">
+			<label for="checkboxTerminos">Acepto los Términos</label>
+
+			<button class="ui-btn ui-btn-active">
+				Reservar
+			</button>
+
+		</div>
+	</div>
 
 
 	<script type="text/javascript" src="phonegap.js"></script>
