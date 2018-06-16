@@ -2,10 +2,10 @@ var hotel = {
 
 
 	principal: function(){
-		document.addEventListener("deviceready", this.inicio, false);
+		document.addEventListener("deviceready", hotel.inicio, false);
 	},
 	inicio: function(){
-		$("#btn-inicio-sesion").click(this.iniciarSesion);
+		$("#btn-inicio-sesion").click(hotel.iniciarSesion);
 	},
 	iniciarSesion(){
 		var email = $("#email-inicio").val();
